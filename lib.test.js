@@ -9,3 +9,11 @@ test("avg([3, 5, 7]) should be 5", () => {
 test("avg([-5, 5]) should be 0", () => {
     expect(lib.avg([-5, 5])).toBe(0);
 });
+
+test("prime(5) should be true", () => {
+    expect(lib.prime(5)).toBe(true);
+});
+
+test("fact(4) should be true", () => {
+    expect(lib.fact(4)).toBe(24);
+});

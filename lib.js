@@ -7,11 +7,25 @@ function avg(numbers) {
 }
 
 function prime(num) {
-    return false;
+    for(let i=2; i<=num/2 ; i++){
+        if(num%i===0){
+            return false; //num is not prime
+        }
+    }
+    return true; //num is prime
 }
 
 function fact(num) {
-    return -1;
+    if(num>15){
+        console.log("factorial num is acceptable up to 15");
+        process.exit(1);
+    }
+    if(num===1){
+        return 1;
+    }
+    else{
+        return num*fact(num-1);
+    }
 }
 
 module.exports = {
